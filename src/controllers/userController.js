@@ -17,7 +17,7 @@ const userController = {
         });
 
         // if there are more than 2 accounts created from this IP in the last hour, use the existing accounts
-        if (createdUsers.length > 2) {
+        if (createdUsers.length > 0) {
             return createdUsers[0];
         }
 
